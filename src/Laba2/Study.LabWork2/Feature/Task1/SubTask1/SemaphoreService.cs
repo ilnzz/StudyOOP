@@ -27,7 +27,9 @@ public sealed class SemaphoreService : IPrimeCounter
 
             var thread = new Thread(() =>
             {
-                for (int digit = start + perThread * threadId; digit < perThread * (threadId + 1) + start; digit++)
+                int from = start + threadId * perThread;
+                int to = (threadId == threadCount - 1) ? end : start + (threadId + 1) * perThread - 1;
+                for (int digit = from; digit <= to; digit++)
                 {
                     Console.WriteLine($"Thread: {threadId} - checks {digit}");
                     if (IsPrime(digit))
