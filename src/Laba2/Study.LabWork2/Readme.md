@@ -53,7 +53,7 @@ Study.LabWork2.Feature.Task1.SubTask1
 
 ##### Summary
 
-Версия 2. Использует Mutex для синхронизации
+Версия 2. Использует Mutex для синхронизации (исправленная)
 
 <a name='T-Study-LabWork2-Feature-Task1-SubTask2-NumberSetProcessor'></a>
 ## NumberSetProcessor `type`
